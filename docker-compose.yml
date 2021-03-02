@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  testy-test:
+    build: .
+    container_name: testy-test
+    environment:
+      - ENV=dev
+      - NODE_ENV=production
+      - PORT=8000
+    image: testy-test
+    ports:
+      - 127.0.0.1:8000:8000
